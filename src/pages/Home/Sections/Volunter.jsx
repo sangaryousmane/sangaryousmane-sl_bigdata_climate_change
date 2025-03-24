@@ -2,7 +2,7 @@ import React from "react";
 import volunteerPicture from "../../../Images/volunteer.png";
 import "./Volunter.css";
 import OpenWhatShapp from "../../../components/Button/OpenWhatShapp";
-
+import ADAM from "../../../Images/mr_mansaray.jpg";
 function Volunter() {
   return (
     <div className="home-seventh-section">
@@ -22,7 +22,7 @@ function Volunter() {
         </div>
         <div className="seventh-third-item">
           <img
-            src={volunteerPicture}
+            src={ADAM}
             alt="volunteer picture"
             id="volunteer-pic"
           />

@@ -62,43 +62,42 @@ export default function Services() {
         </section>
 
         {/* UX Section */}
-        <section className="service-section">
-          <h1 className="service-title">Progams</h1>
-          <h2 className="service-subtitle"></h2>
+<section className="service-section">
+  <h1 className="service-title">Disaster Prediction & Mitigation Programs</h1>
+  <h2 className="service-subtitle"></h2>
 
-          <div className="service-content reverse">
-            <div className="service-description">
-              <h3>Agriculture</h3>
-              <p>
-                To create sustainable and inclusive agricultural sector where
-                women and girls play a central role, envision a future where
-                women and girls have equal access to resources.
-              </p>
-              <h3>Computer Literacy</h3>
-              <p>
-                To build a digital inclusive world or comminuties where women
-                and girls are proficient in technology.
-              </p>
-              <br />
-              <ul className="service-list">
-                {uxServices.map((service, index) => (
-                  <li key={index}>
-                    <ArrowRight className="arrow-icon" />
-                    {service}
-                  </li>
-                ))}
-              </ul>
-            </div>
+  <div className="service-content reverse">
+    <div className="service-description">
+      <h3>Flood Prediction and Early Warning</h3>
+      <p>
+        To develop and implement advanced flood prediction models and early warning systems, 
+        reducing the impact of floods on vulnerable communities through timely and accurate alerts.
+      </p>
+      <h3>Wildfire Risk Assessment and Forecasting</h3>
+      <p>
+        To utilize data analytics and machine learning to assess and forecast wildfire risks, 
+        enabling proactive mitigation strategies and minimizing damage.
+      </p>
+      <br />
+      <ul className="service-list">
+        {uxServices.map((service, index) => (
+          <li key={index}>
+            <ArrowRight className="arrow-icon" />
+            {service}
+          </li>
+        ))}
+      </ul>
+    </div>
 
-            <div className="service-image-container">
-              <img
-                src={FIRST}
-                alt="Alameda County Community Food Bank"
-                className="service-image"
-              />
-            </div>
-          </div>
-        </section>
+    <div className="service-image-container">
+      <img
+        src={FIRST} // Replace FIRST with your image source
+        alt="Disaster Prediction and Mitigation Visual"
+        className="service-image"
+      />
+    </div>
+  </div>
+</section>
         {/* <Statement /> */}
       </div>
     </>

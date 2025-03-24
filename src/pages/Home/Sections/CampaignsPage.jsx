@@ -5,9 +5,9 @@ import WildfirePredict from "../../../Images/t4.jpg";
 import EarlyWarning from "../../../Images/fee1.jpg";
 import auth from "../../../Images/img1.jpg";
 import OpenWhatShapp from "../../../components/Button/OpenWhatShapp";
-
+import SOLARIMG from "../../../Images/solar.png";
 import "./CampaignsPage.css";
-
+import MANGROVE from "../../../Images/mangrove.png";
 export default function CampaignsPage() {
   const campaigns = [
     {
@@ -24,14 +24,14 @@ export default function CampaignsPage() {
     },
     {
       category: "Early Warning Systems",
-      image: WildfirePredict,
+      image: MANGROVE,
       title:
         "Establish robust early warning systems that deliver actionable alerts, empowering communities to prepare for and respond to impending natural disasters.",
       
     },
     {
       category: "Data Infrastructure",
-      image: EarlyWarning,
+      image: SOLARIMG,
       title:
         "Enhance data collection and infrastructure to improve the accuracy and reliability of climate and disaster prediction models for Sierra Leone.",
       
