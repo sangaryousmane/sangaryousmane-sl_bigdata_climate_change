@@ -1,0 +1,153 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; /* Adjust this value for the spacing you desire */
+  justify-items: center; /* Center the items in each cell */
+  margin-bottom: 4rem;
+}
+.service-card {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  width: 100%;
+  max-width: 300px; /* Limits card width */
+}
+.icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+.bg-mint {
+  background-color: #e6f7f3;
+}
+.bg-peach {
+  background-color: #fdf1f1;
+}
+.bg-sky {
+  background-color: #f0f7ff;
+}
+.bg-lemon {
+  background-color: #fff8e6;
+}
+.about-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff5f5;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.image-container {
+  position: relative;
+}
+.about-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.total-raised {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.raised-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: #ff6b6b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.raised-amount {
+  font-weight: 600;
+  color: #1e1b4b;
+}
+.about-content {
+  padding: 2rem;
+}
+.about-label {
+  color: #ff6b6b;
+  font-weight: 500;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e1b4b;
+  margin: 1rem 0;
+}
+.feature-list {
+  list-style-type: none;
+  padding: 0;
+}
+.feature-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.feature-list li::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #ff6b6b;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.more-about-btn {
+  background-color: #80cfc0;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.more-about-btn:hover {
+  background-color: #6bb5a7;
+}
+
+/* Responsive styles started from here for mobile and tablet @talibdev.com */
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .about-section {
+    flex-direction: row;
+  }
+  .image-container,
+  .about-content {
+    flex: 1;
+  }
+  .about-content {
+    padding: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+}

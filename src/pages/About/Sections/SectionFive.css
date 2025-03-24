@@ -1,0 +1,149 @@
+.atalib {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    /* background-color: #ffffff; */
+  }
+  
+  .atalib-header {
+    margin-bottom: 40px;
+  }
+  
+  .atalib-header h2 {
+    color: #6c63ff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .atalib-header h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .atalib-header p {
+    font-size: 1rem;
+    color: #666666;
+    max-width: 600px;
+  }
+  
+  .atalib-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .atalib-card {
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+    cursor: pointer;
+  }
+  
+  .card-content {
+    z-index: 1;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .card-header span {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .arrow-icon {
+    font-size: 1rem;
+  }
+  
+  .atalib-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .card-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 3rem;
+    opacity: 0.2;
+  }
+  
+  .bootcamp {
+    background: linear-gradient(135deg, #2b1a54, #6c63ff);
+    color: white;
+    grid-column: span 2;
+  }
+  
+  .portfolly {
+    background: linear-gradient(135deg, #1e54a1, #3b82f6);
+    color: white;
+  }
+  
+  .portfolly-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 3rem;
+    opacity: 0.2;
+    font-weight: bold;
+  }
+  
+  .builds, .tracks {
+    background-color: #f8f9fa;
+    color: #000000;
+  }
+  
+  .builds .card-icon, .tracks .card-icon {
+    color: #6c63ff;
+    opacity: 1;
+  }
+
+  /* Responsive styles started from here for mobile and tablet @atalibdev.com */
+  
+  @media (max-width: 768px) {
+    .atalib-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .bootcamp {
+      grid-column: span 1;
+    }
+  
+    .atalib-header h1 {
+      font-size: 2rem;
+    }
+  
+    .atalib-card h3 {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .atalib {
+      padding: 20px 10px;
+    }
+  
+    .atalib-header h1 {
+      font-size: 1.75rem;
+    }
+  
+    .atalib-card {
+      padding: 20px;
+    }
+  }
+  
+  
