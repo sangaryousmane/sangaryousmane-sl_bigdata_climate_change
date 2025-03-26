@@ -79,9 +79,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="navbar__donate-button"
-              >
-                Donate
-              </a>
+              >Predict</a>
             </li>
           </ul>
         </div>
