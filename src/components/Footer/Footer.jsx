@@ -75,7 +75,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="https://wa.me/+23288315154?text=Hello,%20I'm%20interested%20in%20getting%20started!"
+                href="/predict"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="navbar__donate-button"
